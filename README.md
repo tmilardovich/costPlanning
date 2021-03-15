@@ -13,3 +13,4 @@ Cost and contribution tracking application.
 
 
 ### Appearance
+![Alt text](gif.gif)
