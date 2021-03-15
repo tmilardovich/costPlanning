@@ -1,0 +1,38 @@
+{
+  "podaci": [
+    {
+      "type": "income",
+      "category": "scholarship",
+      "date": "2021-02-12",
+      "value": "1000",
+      "id": 3,
+      "description": "opis1"
+    },
+    {
+      "type": "expediture",
+      "category": "food",
+      "date": "2021-02-12",
+      "value": "500",
+      "description": "some",
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "income": [
+        "wage",
+        "scholarship",
+        "other"
+      ],
+      "expediture": [
+        "food",
+        "medicine",
+        "tuition",
+        "other"
+      ]
+    }
+  ],
+  "balance": [
+    0
+  ]
+}

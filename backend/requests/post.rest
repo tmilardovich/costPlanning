@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/podaci
+Content-Type: application/json
+
+{
+    "type": "income",
+    "category": "scholarship",
+    "date": "2021-02-12",
+    "value": 1000,
+    "description": "opis1"
+}

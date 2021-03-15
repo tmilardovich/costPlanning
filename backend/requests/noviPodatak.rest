@@ -1,0 +1,12 @@
+POST http://localhost:3001/api/podaci
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRvbW8iLCJpZCI6IjYwMzQwYTUzZGFlYmNlMmIzOGRmYzI5ZCIsImlhdCI6MTYxNDAzMjQ0M30.K6vacfDS7WHGkNe4j5HC2_u3hsfXQ_LfzjMIFGmTDnE
+
+{
+    "type": "income",
+    "category": "scholarship",
+    "date": "2021-02-12",
+    "value": 1000,
+    "description": "eProvjera spremanja uz id korisnika jos jedna",
+    "korisnikId": "60340a53daebce2b38dfc29d"
+}

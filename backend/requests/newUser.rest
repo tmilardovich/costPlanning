@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/korisnici
+Content-Type: application/json
+
+{
+    "username":"hey2",
+    "ime":"tomislav",
+    "pass":"secret"
+}
