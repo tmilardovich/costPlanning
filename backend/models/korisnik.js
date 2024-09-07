@@ -1,30 +1,23 @@
-const mongoose = require("mongoose")
-const uniqueVal = require("mongoose-unique-validator")
+const mongoose = require('mongoose');
+const uniqueValidator = require('mongoose-unique-validator');
 
 const korisnikSchema = new mongoose.Schema({
     username: {
         type: String,
+        required: true,
         unique: true
     },
     ime: String,
     passHash: String,
-    podaci: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Podatak"
-    }]
-})
+    podaci: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Podatak'
+        }
+    ]
+});
 
-korisnikSchema.plugin(uniqueVal)
+korisnikSchema.plugin(uniqueValidator, { message: 'Error, expected {PATH} to be unique.' });
 
-korisnikSchema.set("toJSON", {
-    transform: (doc, ret) => {
-        ret.id = ret._id.toString()
-        delete ret._id
-        delete ret.__v
-        delete ret.passHash
-        return ret
-    }
-})
-
-const Korisnik = mongoose.model("Korisnik", korisnikSchema, "korisnici")
+const Korisnik = mongoose.model('Korisnik', korisnikSchema);
 module.exports = Korisnik

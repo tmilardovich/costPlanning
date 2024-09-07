@@ -15,8 +15,6 @@ logger.info("Spajam se na", config.DB_URI)
 mongoose.connect(config.DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
 }).then(result => {
     logger.info("Spojeni na bazu")
 }).catch(error => {

@@ -2,13 +2,11 @@ const mongoose = require("mongoose")
 const password = process.env.ATLAS
 const dbName = 'podaci-api'
 
-const url = 'mongodb+srv://tmilardov:' + password + '@cluster0.ltc1n.mongodb.net/' + dbName + '?retryWrites=true&w=majority'
+const url = "mongodb+srv://tmilardov:" + password + "@cluster1.ltc1n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1";
 
 mongoose.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
 })
 
 const podaciSchema = new mongoose.Schema({
