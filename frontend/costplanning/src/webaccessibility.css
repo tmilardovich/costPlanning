@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=OpenDyslexic&display=swap');
+
+.iconWrapper {
+  color: white;
+  margin: '8px';
+
+  cursor: pointer;
+}
+
+/* Svijetla tema */
+.light-theme {
+  background-color: white;
+  color: black;
+  height: 100vh;
+}
+
+/* Tamna tema */
+.dark-theme {
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+.buttonFontSize {
+  border-radius: 24px;
+  width: 36px;
+  margin-left: 8px;
+}
+
+.dyslexia-font {
+  font-family: 'OpenDyslexic', Arial, sans-serif;
+}
